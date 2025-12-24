@@ -1,97 +1,21 @@
-<<<<<<< HEAD
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { Search, MapPin, Briefcase, Heart, Globe, Users } from "lucide-react";
-import { useState } from "react";
-=======
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
->>>>>>> 1643147 (Initial commit: Foodpanda clone with redesigned careers link and logo updates)
 
 const CareersPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
-<<<<<<< HEAD
-  const values = [
-    {
-      icon: Heart,
-      title: "Passionate",
-      description: "We're passionate about delivering great experiences for our customers and partners.",
-    },
-    {
-      icon: Users,
-      title: "Collaborative",
-      description: "We work together across teams and borders to achieve our goals.",
-    },
-    {
-      icon: Globe,
-      title: "Global",
-      description: "We operate in 11 markets with opportunities across Asia.",
-    },
-  ];
-
-  const departments = [
-    "Engineering",
-    "Product",
-    "Operations",
-    "Marketing",
-    "Finance",
-    "Human Resources",
-    "Customer Service",
-    "Data Science",
-  ];
-
-  const locations = [
-    "Singapore",
-    "Hong Kong",
-    "Kuala Lumpur",
-    "Bangkok",
-    "Manila",
-    "Taipei",
-=======
   const stats = [
     { number: "7000+", label: "Employees" },
     { number: "400+", label: "Cities" },
     { number: "50+", label: "nationalities" },
     { number: "20+", label: "Languages" },
->>>>>>> 1643147 (Initial commit: Foodpanda clone with redesigned careers link and logo updates)
   ];
 
   const jobListings = [
     {
-<<<<<<< HEAD
-      title: "Senior Software Engineer",
-      department: "Engineering",
-      location: "Singapore",
-      type: "Full-time",
-    },
-    {
-      title: "Product Manager",
-      department: "Product",
-      location: "Hong Kong",
-      type: "Full-time",
-    },
-    {
-      title: "Data Analyst",
-      department: "Data Science",
-      location: "Kuala Lumpur",
-      type: "Full-time",
-    },
-    {
-      title: "Marketing Manager",
-      department: "Marketing",
-      location: "Bangkok",
-      type: "Full-time",
-    },
-    {
-      title: "Operations Coordinator",
-      department: "Operations",
-      location: "Manila",
-      type: "Full-time",
-=======
       title: "Specialist, Demand Control",
       location: "Taguig, Philippines",
       jobType: "Permanent",
@@ -132,56 +56,18 @@ const CareersPage = () => {
       title: "Our Office Space",
       publishDate: "Friday, 03 May 2024",
       link: "/blog-post/2024-5/our-office-space",
->>>>>>> 1643147 (Initial commit: Foodpanda clone with redesigned careers link and logo updates)
     },
   ];
 
   return (
-<<<<<<< HEAD
-    <>
-      {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center bg-panda-pink-light overflow-hidden">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-panda-dark leading-tight">
-                Hungry to make an impact?
-              </h1>
-              <p className="text-xl text-panda-dark/80 mt-6">
-                There's always room at our table.
-              </p>
-              
-              {/* Search Box */}
-              <div className="mt-10 relative max-w-xl">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
-                <input
-                  type="text"
-                  placeholder="Start your job search here"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-12 pr-14 py-4 rounded-full border-0 bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary shadow-lg"
-                />
-                <button className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-panda-pink-dark transition-colors">
-                  <Search className="w-5 h-5 text-primary-foreground" />
-                </button>
-              </div>
-            </div>
-            
-            <div className="hidden lg:flex justify-center">
-              <div className="relative">
-                <div className="w-80 h-80 bg-background rounded-full flex items-center justify-center shadow-2xl">
-                  <span className="text-9xl">🐼</span>
-                </div>
-              </div>
-=======
     <div className="flex flex-col min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-[#FFF0F5] pt-24 pb-16 md:pt-32 md:pb-24">
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-panda-dark leading-tight mb-4 tracking-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-panda-dark leading-tight mb-4 tracking-tight text-balance">
             Hungry to make an impact?
           </h1>
-          <h2 className="text-xl md:text-2xl text-panda-dark/70 mb-20 md:mb-28">
+          <h2 className="text-xl md:text-2xl text-panda-dark/70 mb-20 md:mb-28 text-balance">
             There’s always room at our table.
           </h2>
 
@@ -207,26 +93,11 @@ const CareersPage = () => {
                 alt="Pau pau"
                 className="h-24 md:h-32 w-auto drop-shadow-xl"
               />
->>>>>>> 1643147 (Initial commit: Foodpanda clone with redesigned careers link and logo updates)
             </div>
           </div>
         </div>
       </section>
 
-<<<<<<< HEAD
-      {/* Mission Section */}
-      <section className="section bg-background">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-              "To be the most loved everyday food and groceries destination"
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              ...that's our mission at foodpanda. Whether it's by delivering food on our signature pink bikes, providing insights into the newest food trends, or showcasing local favorite restaurants, we're on a mission to redefine how food, people, culture and tech are connected.
-            </p>
-            <p className="text-muted-foreground mt-6">
-              Our parent company, Delivery Hero, is a global leader in the food delivery industry processing over 3 million orders every day and operating in 40+ markets in the world, with 18,000 employees and approximately 500,000+ restaurant partners.
-=======
       {/* Hero Banner Photo */}
       <section className="relative w-full h-[400px] md:h-[600px] lg:h-[800px] overflow-hidden">
         <div 
@@ -238,7 +109,7 @@ const CareersPage = () => {
       {/* Mission Section */}
       <section className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h3 className="text-2xl md:text-4xl font-bold text-foreground mb-8 leading-tight">
+          <h3 className="text-2xl md:text-4xl font-bold text-foreground mb-8 leading-tight text-balance">
             "To be the most loved everyday food and groceries destination"
           </h3>
           <div className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
@@ -254,34 +125,11 @@ const CareersPage = () => {
               delivery industry processing over 3 million orders every day and
               operating in 40+ markets in the world, with 18,000 employees and
               approximately 500,000+ restaurant partners.
->>>>>>> 1643147 (Initial commit: Foodpanda clone with redesigned careers link and logo updates)
             </p>
           </div>
         </div>
       </section>
 
-<<<<<<< HEAD
-      {/* Values Section */}
-      <section className="section bg-primary">
-        <div className="container mx-auto px-4 md:px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground text-center mb-12">
-            Our Values
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {values.map((value, index) => (
-              <div
-                key={index}
-                className="bg-primary-foreground/10 backdrop-blur rounded-2xl p-8 text-center"
-              >
-                <div className="w-16 h-16 bg-primary-foreground rounded-2xl flex items-center justify-center mx-auto mb-6">
-                  <value.icon className="w-8 h-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold text-primary-foreground mb-4">
-                  {value.title}
-                </h3>
-                <p className="text-primary-foreground/80">
-                  {value.description}
-=======
       {/* We love what we do */}
       <section className="py-16 md:py-24 bg-white overflow-hidden">
         <div className="container mx-auto px-4 md:px-12">
@@ -361,7 +209,7 @@ const CareersPage = () => {
       {/* Stats Section */}
       <section className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-20">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-20 text-balance">
             A diverse and high-performing team
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 max-w-6xl mx-auto mb-20">
@@ -372,13 +220,10 @@ const CareersPage = () => {
                 </div>
                 <p className="text-sm md:text-base text-muted-foreground font-bold uppercase tracking-widest">
                   {stat.label}
->>>>>>> 1643147 (Initial commit: Foodpanda clone with redesigned careers link and logo updates)
                 </p>
               </div>
             ))}
           </div>
-<<<<<<< HEAD
-=======
           <div className="flex justify-center">
             <img
               src="https://attraxcdnprod1-freshed3dgayb7c3.z01.azurefd.net/1481181/0f1cd41f-b5a4-4fa7-b963-a5706b26c90b/0.0.0/Blob/images/stats-image.svg"
@@ -386,76 +231,20 @@ const CareersPage = () => {
               className="w-full max-w-lg h-auto"
             />
           </div>
->>>>>>> 1643147 (Initial commit: Foodpanda clone with redesigned careers link and logo updates)
         </div>
       </section>
 
       {/* Job Listings */}
-<<<<<<< HEAD
-      <section className="section bg-secondary">
-        <div className="container mx-auto px-4 md:px-6">
-          <h2 className="section-title text-center mb-12">
-            Open Positions
-          </h2>
-
-          {/* Filters */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <select className="px-4 py-2 rounded-lg border border-border bg-background text-foreground">
-              <option>All Departments</option>
-              {departments.map((dept) => (
-                <option key={dept}>{dept}</option>
-              ))}
-            </select>
-            <select className="px-4 py-2 rounded-lg border border-border bg-background text-foreground">
-              <option>All Locations</option>
-              {locations.map((loc) => (
-                <option key={loc}>{loc}</option>
-              ))}
-            </select>
-          </div>
-
-          {/* Job Cards */}
-          <div className="space-y-4 max-w-4xl mx-auto">
-            {jobListings.map((job, index) => (
-              <div
-                key={index}
-                className="bg-card rounded-xl p-6 flex flex-col md:flex-row md:items-center justify-between gap-4 shadow-md hover:shadow-lg transition-shadow"
-              >
-                <div>
-                  <h3 className="text-lg font-bold text-foreground">
-                    {job.title}
-                  </h3>
-                  <div className="flex flex-wrap items-center gap-4 mt-2 text-sm text-muted-foreground">
-                    <span className="flex items-center gap-1">
-                      <Briefcase className="w-4 h-4" />
-                      {job.department}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <MapPin className="w-4 h-4" />
-                      {job.location}
-                    </span>
-                    <span className="text-primary font-medium">{job.type}</span>
-                  </div>
-                </div>
-                <Button variant="panda">Apply Now</Button>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button variant="pandaOutline" size="lg">
-              View All Positions
-=======
       <section className="py-20 md:py-32 bg-white border-t border-gray-100">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-20">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-20 text-balance">
             Some roles you might be interested in
           </h2>
           <div className="space-y-8 max-w-5xl mx-auto">
             {jobListings.map((job, index) => (
               <div key={index} className="group bg-white border border-gray-100 rounded-3xl p-8 md:p-10 shadow-sm hover:shadow-xl transition-all duration-300">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-6">
-                  <h3 className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-primary transition-colors">
+                  <h3 className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-primary transition-colors text-balance">
                     {job.title}
                   </h3>
                   <span className="px-4 py-1.5 bg-gray-100 text-gray-600 text-xs font-bold rounded-full uppercase tracking-wider">
@@ -480,19 +269,15 @@ const CareersPage = () => {
           <div className="text-center mt-20">
             <Button variant="pandaOutline" size="xl" className="rounded-full px-16 text-lg border-2" asChild>
               <Link to="/jobs">View all</Link>
->>>>>>> 1643147 (Initial commit: Foodpanda clone with redesigned careers link and logo updates)
             </Button>
           </div>
         </div>
       </section>
-<<<<<<< HEAD
-    </>
-=======
 
       {/* Blog Posts */}
       <section className="py-20 md:py-32 bg-white border-t border-gray-100">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-20">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-20 text-balance">
             Read more about foodpanda
           </h2>
           <div className="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
@@ -528,7 +313,6 @@ const CareersPage = () => {
         </div>
       </section>
     </div>
->>>>>>> 1643147 (Initial commit: Foodpanda clone with redesigned careers link and logo updates)
   );
 };
 

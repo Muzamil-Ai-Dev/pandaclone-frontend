@@ -1,32 +1,6 @@
 import { Button } from "@/components/ui/button";
-<<<<<<< HEAD
-
-const PandaAdsSolutionsPage = () => {
-  return (
-    <>
-      <section className="py-16 bg-secondary">
-        <div className="container mx-auto px-4 md:px-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Boost your brand with our retail media solutions</h1>
-          <p className="text-lg text-muted-foreground max-w-3xl">Harness the power of first-party retail data to connect with millions of high-value customers within and beyond the app.</p>
-        </div>
-      </section>
-
-      <section className="section bg-background">
-        <div className="container mx-auto px-4 md:px-6">
-          <h2 className="section-title text-center mb-12">Reach high-value customers with in-app display ads</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { title: "Homescreen ad", desc: "Reach millions of customers at the beginning of their purchase journey" },
-              { title: "Order tracking page ad", desc: "Drive engagement and results without disrupting their ordering experience" },
-              { title: "Shopping ad", desc: "Boost conversion on pandamart and foodpanda shops" },
-            ].map((item, i) => (
-              <div key={i} className="bg-secondary p-8 rounded-2xl text-center">
-                <h3 className="text-xl font-bold text-foreground mb-4">{item.title}</h3>
-                <p className="text-muted-foreground">{item.desc}</p>
-=======
 import { Link } from "react-router-dom";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { useState } from "react";
 
 const PandaAdsSolutionsPage = () => {
   const inAppAds = [
@@ -126,26 +100,12 @@ const PandaAdsSolutionsPage = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">{item.title}</h3>
                 <p className="text-lg text-muted-foreground">{item.desc}</p>
->>>>>>> 1643147 (Initial commit: Foodpanda clone with redesigned careers link and logo updates)
               </div>
             ))}
           </div>
         </div>
       </section>
 
-<<<<<<< HEAD
-      <section className="section bg-primary">
-        <div className="container mx-auto px-4 md:px-6 text-center">
-          <h2 className="text-3xl font-bold text-primary-foreground mb-6">Start advertising today</h2>
-          <Button variant="pandaWhite" size="lg">Contact us</Button>
-        </div>
-      </section>
-    </>
-  );
-};
-
-export default PandaAdsSolutionsPage;
-=======
       {/* Consideration & Conversion (Tabs) */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 md:px-6">
@@ -214,7 +174,7 @@ export default PandaAdsSolutionsPage;
               <p className="text-lg text-muted-foreground">
                 Share your next campaign with us and receive a tailored media kit straight to your inbox <br className="hidden md:block" />– easy peasy!
               </p>
-              <Button variant="panda" className="rounded-full px-8" asChild>
+              <Button variant="panda" className="rounded-full px-8 h-12 font-bold shadow-md" asChild>
                 <a href="https://mediakit-pandaads.foodpanda.com/" target="_blank" rel="noopener noreferrer">
                   Get started
                 </a>
@@ -238,7 +198,7 @@ export default PandaAdsSolutionsPage;
             <h2 className="text-2xl md:text-3xl font-bold text-white">
               Start advertising with panda ads today!
             </h2>
-            <Button variant="pandaWhite" size="lg" className="rounded-full px-12 text-primary hover:bg-white/90" asChild>
+            <Button variant="pandaWhite" size="lg" className="rounded-full px-12 text-primary hover:bg-white/90 font-bold" asChild>
               <Link to="/pandaads/contact">Get in touch!</Link>
             </Button>
           </div>
@@ -249,4 +209,3 @@ export default PandaAdsSolutionsPage;
 };
 
 export default PandaAdsSolutionsPage;
->>>>>>> 1643147 (Initial commit: Foodpanda clone with redesigned careers link and logo updates)

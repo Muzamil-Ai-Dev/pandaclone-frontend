@@ -1,10 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { StatsGrid } from "@/components/StatsGrid";
-<<<<<<< HEAD
-=======
 import { Card, CardContent } from "@/components/ui/card";
->>>>>>> 1643147 (Initial commit: Foodpanda clone with redesigned careers link and logo updates)
 
 const PandaAdsHomePage = () => {
   const stats = [
@@ -13,26 +9,6 @@ const PandaAdsHomePage = () => {
     { number: "400+", label: "cities" },
   ];
 
-<<<<<<< HEAD
-  return (
-    <>
-      {/* Hero */}
-      <section className="relative min-h-[70vh] flex items-center" style={{
-        backgroundImage: "url(https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}>
-        <div className="absolute inset-0 bg-panda-dark/60 z-10" />
-        <div className="relative z-20 container mx-auto px-4 md:px-6">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary leading-tight">
-              Reach millions<br />with <span className="text-primary">panda ads</span>
-            </h1>
-            <p className="text-lg text-secondary/90 mt-6">
-              Advertise with foodpanda and connect with millions of ready-to-shop customers within and beyond the foodpanda app.
-            </p>
-            <Button variant="pandaOutline" size="lg" className="mt-8 border-secondary text-secondary hover:bg-secondary hover:text-primary" asChild>
-=======
   const features = [
     {
       title: "Maximise your reach",
@@ -158,7 +134,6 @@ const PandaAdsHomePage = () => {
               ready-to-shop customers within and beyond the foodpanda app.
             </p>
             <Button size="lg" className="bg-white text-primary hover:bg-white/90 rounded-full px-12 h-14 text-lg font-bold shadow-xl" asChild>
->>>>>>> 1643147 (Initial commit: Foodpanda clone with redesigned careers link and logo updates)
               <Link to="/pandaads/contact">Get in touch</Link>
             </Button>
           </div>
@@ -166,30 +141,6 @@ const PandaAdsHomePage = () => {
       </section>
 
       {/* Stats */}
-<<<<<<< HEAD
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4 md:px-6 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-12">
-            Boost your brand with Asia's largest food and grocery delivery network*
-          </h2>
-          <StatsGrid stats={stats} />
-        </div>
-      </section>
-
-      {/* Features */}
-      <section className="section bg-secondary">
-        <div className="container mx-auto px-4 md:px-6">
-          <h2 className="section-title text-center mb-16">Power up your visibility & engagement</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { title: "Maximise your reach", desc: "Amplify your campaign by connecting with your target customers right where they shop" },
-              { title: "Engage high-value audiences", desc: "Leverage our first-party data and advanced targeting to connect with the right audience" },
-              { title: "Get personalised support", desc: "Achieve your marketing goals and drive growth with personalised support, insights, and more" },
-            ].map((item, i) => (
-              <div key={i} className="bg-card p-8 rounded-2xl shadow-lg text-center">
-                <h3 className="text-xl font-bold text-foreground mb-4">{item.title}</h3>
-                <p className="text-muted-foreground">{item.desc}</p>
-=======
       <section className="py-16 md:py-24 bg-white border-b border-gray-100">
         <div className="container px-4 md:px-6">
           <h2 className="text-2xl md:text-4xl font-bold text-center mb-16 text-foreground text-balance">
@@ -201,29 +152,12 @@ const PandaAdsHomePage = () => {
               <div key={i} className="text-center group transition-transform hover:scale-105">
                 <div className="text-6xl md:text-8xl font-extrabold text-primary mb-4 tracking-tighter">{stat.number}</div>
                 <div className="text-xl md:text-2xl text-foreground font-bold uppercase tracking-widest opacity-70">{stat.label}</div>
->>>>>>> 1643147 (Initial commit: Foodpanda clone with redesigned careers link and logo updates)
               </div>
             ))}
           </div>
         </div>
       </section>
 
-<<<<<<< HEAD
-      {/* CTA */}
-      <section className="section bg-primary">
-        <div className="container mx-auto px-4 md:px-6 text-center">
-          <h2 className="text-3xl font-bold text-primary-foreground mb-6">Ready to grow your brand?</h2>
-          <Button variant="pandaWhite" size="lg" asChild>
-            <Link to="/pandaads/contact">Contact us</Link>
-          </Button>
-        </div>
-      </section>
-    </>
-  );
-};
-
-export default PandaAdsHomePage;
-=======
       {/* Visibility Section */}
       <section className="py-16 md:py-24 bg-muted/20">
         <div className="container px-4 md:px-6">
@@ -358,4 +292,3 @@ export default PandaAdsHomePage;
 };
 
 export default PandaAdsHomePage;
->>>>>>> 1643147 (Initial commit: Foodpanda clone with redesigned careers link and logo updates)
