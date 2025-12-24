@@ -1,73 +1,66 @@
-# Welcome to your Lovable project
+# Foodpanda Clone - Frontend
 
-## Project info
+A high-fidelity, responsive frontend clone of the Foodpanda platform, built with React, TypeScript, and Tailwind CSS. This project replicates the core user experience, design system, and specialized landing pages of the official Foodpanda website.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🚀 Live Demo
 
-## How can I edit this code?
+Check out the live site here: **[https://muzamil-ai-dev.github.io/pandaclone-frontend/](https://muzamil-ai-dev.github.io/pandaclone-frontend/)**
 
-There are several ways of editing your application.
+## ✨ Key Features
 
-**Use Lovable**
+- **Responsive Design:** Fully optimized for mobile, tablet, and desktop devices.
+- **Official Brand Aesthetics:** Implements the custom Foodpanda design system, including "Panda Pink" brand colors and typography.
+- **Main Platform Pages:**
+  - **Home:** Featured hero section with video background, news highlights, and app download CTAs.
+  - **About:** Company story, strategic pillars (carousel), and core values (interactive tabs).
+  - **Partners:** Dedicated sections for restaurant and shop partners with country-specific information.
+  - **Newsroom:** Latest press releases and news filtering.
+  - **Contact:** Functional contact form and help center guidance.
+- **Panda Ads specialized section:** Complete landing page suite for the Panda Ads retail media platform, including solutions, insights, and case studies.
+- **Integrated Navigation:** Dynamic headers and footers that adapt based on the current sub-brand (Foodpanda vs. Panda Ads).
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🛠️ Technologies Used
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Framework:** React 18 with Vite
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **UI Components:** Shadcn UI (Radix UI primitives)
+- **Icons:** Lucide React
+- **Routing:** React Router (HashRouter for GH Pages compatibility)
+- **State Management:** TanStack Query (React Query)
+- **Deployment:** GitHub Actions
 
-**Use your preferred IDE**
+## 💻 Local Development
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Follow these steps to run the project locally:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/Muzamil-Ai-Dev/pandaclone-frontend.git
+   ```
 
-Follow these steps:
+2. **Navigate to the directory:**
+   ```sh
+   cd pandaclone-frontend
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. **Install dependencies:**
+   ```sh
+   npm install
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📦 Build and Deployment
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+The project is configured for automated deployment via **GitHub Actions**.
 
-**Edit a file directly in GitHub**
+- **Build Command:** `npm run build`
+- **Deployment Workflow:** Any push to the `main` branch triggers the `.github/workflows/deploy.yml` workflow, which builds the production assets and deploys them to the `gh-pages` environment.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📄 License
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is built for educational purposes as part of a software engineering assignment.
